@@ -10,7 +10,6 @@ import AnimationDisplay from '../components/AnimationDisplay'
 let Projects = () =>{
     return(
         <div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZTGD2Z4VG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
