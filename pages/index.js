@@ -11,6 +11,16 @@ import Seperator from '../components/Seperator'
 const Home = () => {
   return (
     <div className={utils.container}>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZTGD2Z4VG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GZTGD2Z4VG');
+</script>
+
       <Nav/>
       <AboutIntro/>
       <Seperator/>
