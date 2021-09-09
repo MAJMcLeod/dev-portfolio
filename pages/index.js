@@ -11,14 +11,23 @@ import Seperator from '../components/Seperator'
 const Home = () => {
   return (
     <div className={utils.container}>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZTGD2Z4VG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GZTGD2Z4VG"
+        />
 
-  gtag('config', 'G-GZTGD2Z4VG');
-</script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)}
+              gtag('js', new Date());
+              gtag('config', 'G-GZTGD2Z4VG', { page_path: window.location.pathname });
+            `,
+          }}
+        />
+      </head>
 
       <Nav/>
       <AboutIntro/>
